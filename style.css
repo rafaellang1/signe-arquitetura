@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
 
 * {
   margin: 0;
@@ -15,17 +16,23 @@
   --cor3: #122939;
 
   --fonte-padrao: 'Open Sans', sans-serif;
+  --fonte-especial: 'Poppins', sans-serif;
 }
 
 html {
   font-size: 62,5%;
+  scroll-behavior: smooth; /*rolagem suave*/
+}
+
+:target {
+  scroll-margin-top: 4.5em; /*rolagem até o ponto certo da pagina*/
 }
 
 html, body {
   height: 100%;
   background-color: #ffff;
   min-width: 300px;
-  max-width: 100%;
+  max-width: 1500px;
   font-family: var(--fonte-padrao);
 }
 
@@ -65,7 +72,6 @@ header a:hover {
   align-items: center;
   width: 95%;
   margin: auto;
-
 }
 
 .logo img {
@@ -83,3 +89,143 @@ header a:hover {
   margin: auto;
 }
 
+#apresentacao {
+  height: 500px;
+  padding: 0 50px;
+}
+
+/* icones */
+
+#apresentacao h2{
+  font-size: 1.8rem;
+  font-family: var(--fonte-especial);
+  color: #5B483A;
+  text-align: center;
+  margin-top: 50px;
+}
+.container-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  column-gap: 50px;
+}
+
+.interiores a,
+.planejados a,
+.imobiliarios a,
+.decoracao a{
+  height: 200px;
+  width: 200px;
+  background-color: var(--cor0);
+  border-radius: 10px;
+  display: grid;
+  align-content: space-evenly;
+  justify-items: center;
+  text-decoration: none;
+  color: var(--cor3);
+}
+
+.container-2 p {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.container-2 span {
+  font-size: 1.3rem;
+}
+
+/* CARACTERISTICAS */
+
+#caracteristicas {
+  height: 500px;
+  padding: 0 50px;
+  background: var(--cor0);
+}
+
+.container-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.container-3 img {
+  width: 550px;
+  padding: 25px;
+}
+.container-3 .text{
+  color: var(--cor2);
+  margin-top: 135px;
+  padding: 30px;
+}
+
+.container-3 .text h2 {
+  font-size: 1.9rem;
+  padding: 10px 0px;
+}
+
+/* PREÇOS */
+
+#precos {
+  height: 500px;
+  padding: 0 50px;
+
+}
+
+.container-4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  column-gap: 40px;
+}
+
+.plano1,
+.plano2,
+.plano3 {
+  height: 310px;
+  width: 250px;
+  font-family: var(--fonte-especial);
+  background-color: var(--cor3);
+  border-radius: 10px;
+  display: grid;
+  align-content: stretch;
+  justify-items: center;
+  color: var(--cor0);
+  padding: 25px 15px 15px 25px;
+  box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.350);
+}
+
+.container-4 h3 {
+  font-size: 1.5rem;
+  color: var(--cor1);
+}
+
+.container-4 ul li {
+  font-size: 1.1rem;
+}
+
+.container-4 strong {
+  color: var(--cor1);
+  font-size: 1.5rem;
+}
+
+.container-4 span {
+  font-size: 0.7rem;
+}
+
+#precos h2 {
+  font-size: 1.8rem;
+  font-family: var(--fonte-especial);
+  color: var(--cor3);
+  text-align: center;
+  margin-top: 50px;
+}
+
+#precos p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#feedback {
+  height: 500px;
+  padding: 0 50px;
+}
