@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
   margin: 0;
@@ -17,6 +18,7 @@
 
   --fonte-padrao: 'Open Sans', sans-serif;
   --fonte-especial: 'Poppins', sans-serif;
+  --fonte-especifica: 'Nunito', sans-serif;
 }
 
 html {
@@ -99,15 +101,16 @@ header a:hover {
 #apresentacao h2{
   font-size: 1.8rem;
   font-family: var(--fonte-especial);
-  color: #5B483A;
+  color: var(--cor2);
   text-align: center;
   margin-top: 50px;
+  line-height: 30px;
 }
 .container-2 {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  column-gap: 50px;
+  column-gap: 30px;
 }
 
 .interiores a,
@@ -181,17 +184,16 @@ header a:hover {
 .plano1,
 .plano2,
 .plano3 {
-  height: 310px;
+  height: 330px;
   width: 250px;
   font-family: var(--fonte-especial);
-  background-color: var(--cor3);
-  border-radius: 10px;
+  background-color: #ffffffb2;
   display: grid;
-  align-content: stretch;
+  align-content: space-between;
   justify-items: center;
-  color: var(--cor0);
+  color: var(--cor2);
   padding: 25px 15px 15px 25px;
-  box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.350);
+  box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.15);
 }
 
 .container-4 h3 {
@@ -204,28 +206,142 @@ header a:hover {
 }
 
 .container-4 strong {
-  color: var(--cor1);
+  color: var(--cor2);
   font-size: 1.5rem;
 }
 
 .container-4 span {
   font-size: 0.7rem;
+  color: var(--cor1);
+}
+
+.button{
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color: var(--cor0);
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#122939;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 35px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.button:active {
+	position:relative;
+	top:1px;
 }
 
 #precos h2 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-family: var(--fonte-especial);
   color: var(--cor3);
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  line-height: 30px;
 }
 
 #precos p {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
+
+/* FEEDBACK */
 
 #feedback {
   height: 500px;
-  padding: 0 50px;
+  padding: 30px 50px 20px 50px;
+  background-image: url(imagens/bg_feedback.png);
+
+}
+
+#feedback h2 {
+  font-size: 1.3rem;
+  color: var(--cor3);
+  opacity: .9;
+  
+}
+
+#feedback p {
+  font-size: .9rem;
+  padding-bottom: 30px;
+}
+
+
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  height: 230px;
+  gap: 40px;
+  padding: 40px;
+}
+
+.box-comment {
+  font-family: var(--fonte-especial);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.290);
+  height: 200px;
+  width: 330px;
+  border-radius: 20px;
+  background: #fff;
+
+}
+
+.box-comment .profile {
+  padding: 8px 8px 3px 8px;
+  text-align: center;
+}
+
+.box-comment .profile img {
+  width: 50px;
+  border-radius: 50%;
+  border: var(--cor1) solid 3px;
+}
+
+.box-comment .profile h4 {
+  font-size: .8rem;
+  opacity: .6;
+  line-height: 8px;
+  padding-top: 5px;
+}
+
+.box-comment .profile strong {
+  font-weight: 700;
+  font-size: .9rem;
+  opacity: .8;
+}
+
+.box-comment .text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-comment span {
+  margin: -68px -22px;
+  font-size: 6rem;
+  font-family: var(--fonte-especifica);
+  color: var(--cor1)
+}
+
+.box-comment .circle {
+  margin: -50px -17px;
+  width: 130px;
+  height: 40px;
+  background: var(--cor0);
+  border-radius: 50%;
+}
+
+.box-comment p {
+  font-size: .8rem;
+  opacity: .7;
+  padding: 3px 15px 15px 15px;
+  text-align: justify;
+
+
 }
