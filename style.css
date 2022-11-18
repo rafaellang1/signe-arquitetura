@@ -193,7 +193,7 @@ header a:hover {
   justify-items: center;
   color: var(--cor2);
   padding: 25px 15px 15px 25px;
-  box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.10);
 }
 
 .container-4 h3 {
@@ -343,5 +343,146 @@ header a:hover {
   padding: 3px 15px 15px 15px;
   text-align: justify;
 
+}
 
+#perguntas {
+  height: auto;
+  padding: 30px 50px;
+  
+}
+
+.duvidas {
+  display: flex;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-collapse {
+  max-width: auto;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.div-collapse label {
+  position: relative;
+  font-weight: 600;
+  background: var(--cor0);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1) 0 4px 11px 0 rgba(0, 0, 0, .08);
+  color: var(--cor3);
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.div-collapse label:after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  background: url(imagens/icon_arrow.png);
+}
+
+.collapse-text {
+  max-height: 1px;
+  overflow: hidden;
+  line-height: 1.4;
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.div-collapse input:checked ~ .collapse-text {
+  max-height: 300px;
+  padding-bottom: 25px;
+  background: var(--cor0);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1) 0 4px 11px 0 rgba(0, 0, 0, .08);
+  opacity: 1;
+  top: 0;
+
+}
+
+.collapse-text h2 {
+  margin-bottom: 10px;
+  padding: 15px 15px 0;
+  color: var(--cor3);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.collapse-text p {
+  padding: 0 15px;
+}
+
+#collapse-head,
+#collapse-head2,
+#collapse-head3,
+#collapse-head4,
+#collapse-head5 {
+  display: none;
+}
+
+#desenvolvedores {
+  height: 500px;
+  padding: 20px 50px;
+  font-family: var(--fonte-especial);
+}
+
+.dev-container .text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.dev-container .text h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.dev-container .text span {
+  float: right;
+  width: 550px;
+}
+
+.colaboradores {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  gap: 0px 80px
+;}
+
+.colaboradores .dev {
+  width: 160px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.colaboradores .dev img {
+  width: 130px;
+  border-radius: 50%;
+  filter: grayscale(1);
+}
+
+.colaboradores .dev h4 {
+  color: var(--cor3);
+  padding-top: 8px;
+}
+
+.colaboradores .dev span {
+  font-size: .8rem;
+  text-align: center;
+  padding: 10px;
+  line-height: 13px;
+  opacity: .8;
 }
