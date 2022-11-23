@@ -24,7 +24,8 @@
 html {
   font-size: 62,5%;
   scroll-behavior: smooth; /*rolagem suave*/
-}
+
+  }
 
 :target {
   scroll-margin-top: 4.5em; /*rolagem até o ponto certo da pagina*/
@@ -40,7 +41,7 @@ html, body {
 
 header {
   background-image: url(imagens/bg_header.png);
-  height: 500px;
+  height: 700px;
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -429,9 +430,61 @@ header a:hover {
   display: none;
 }
 
+#newslatter {
+  height: 250px;
+  padding: 0 50px;
+  background-color: var(--cor3);
+}
+
+.newslatter-container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.form {
+  flex-direction: column;
+}
+
+.newslatter-container h3 {
+  color: var(--cor3);
+  font-size: 1.3rem;
+  color: var(--cor0);
+}
+
+.newslatter-container p{
+  font-size: 1rem;
+  opacity: .8;
+  color: var(--cor0);
+}
+.newslatter-container form {
+  width: 600px;
+  padding-top: 15px;
+}
+
+.newslatter-container form input {
+  width: 40%;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(51, 51, 51, 0.568);
+}
+
+.newslatter-container  button {
+  width: 18%;
+  background-color: var(--cor2);
+  color: var(--cor0);
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
 #desenvolvedores {
-  height: 500px;
-  padding: 20px 50px;
+  height: 700px;
+  padding: 60px 50px;
   font-family: var(--fonte-especial);
 }
 
@@ -485,4 +538,89 @@ header a:hover {
   padding: 10px;
   line-height: 13px;
   opacity: .8;
+}
+
+
+footer {
+  height: 310px;
+  background: var(--cor3);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor0);
+  font-family: var(--fonte-especial);
+  padding: 20px;
+}
+
+.footer-container img {
+  width: 130px;
+}
+
+/* .footer-container p {
+  text-align: center;
+  font-size: .9rem;
+  opacity: .8;
+  padding: 10px 0;
+} */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: .9;
+  padding: 15px 0;
+}
+
+.contact strong {
+  font-size: .9rem;
+  padding-top: 5px;
+
+}
+
+.contact span {
+  font-size: .8rem;
+}
+
+.social {
+  padding: 10px;
+}
+
+.social a {
+  padding: 5px;
+  color: var(--cor0);
+}
+
+.social span {
+  padding: none;
+}
+
+.social a span {
+  width: 35px;
+  height: 35px;
+  background: #173449;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.social a span:hover {
+  background: var(--cor2);
+}
+
+.bottom {
+  width: 100%;
+  font-family: var(--fonte-especifica);
+  color: var(--cor0);
+  opacity: .8;
+  padding: 5px;
+  background-color: #0c1e2b;
+  font-size: 0.8rem;
+  text-align: center;
 }
