@@ -560,13 +560,6 @@ footer {
   width: 130px;
 }
 
-/* .footer-container p {
-  text-align: center;
-  font-size: .9rem;
-  opacity: .8;
-  padding: 10px 0;
-} */
-
 .contact {
   display: flex;
   flex-direction: column;
