@@ -127,6 +127,17 @@ header a:hover {
   justify-items: center;
   text-decoration: none;
   color: var(--cor3);
+
+  -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+}
+
+.interiores a:hover,
+.planejados a:hover,
+.imobiliarios a:hover,
+.decoracao a:hover{
+  -webkit-transform: scale(1.1);
+   transform: scale(1.1);
 }
 
 .container-2 p {
@@ -256,6 +267,8 @@ header a:hover {
 
 /* FEEDBACK */
 
+/* FEEDBACK */
+
 #feedback {
   height: 500px;
   padding: 30px 50px 20px 50px;
@@ -345,6 +358,8 @@ header a:hover {
   text-align: justify;
 
 }
+
+/* PERGUNTAS */
 
 #perguntas {
   height: auto;
