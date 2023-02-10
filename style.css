@@ -186,7 +186,7 @@ header a:hover {
 
 }
 
-.container-4 {
+.container-4 .child-container {
   display: flex;
   justify-content: center;
   margin-top: 80px;
@@ -196,12 +196,12 @@ header a:hover {
 .plano1,
 .plano2,
 .plano3 {
-  height: 330px;
+  height: 350px;
   width: 250px;
   font-family: var(--fonte-especial);
   background-color: #ffffffb2;
   display: grid;
-  align-content: space-between;
+  align-content: space-around;
   justify-items: center;
   color: var(--cor2);
   padding: 25px 15px 15px 25px;
@@ -239,6 +239,7 @@ header a:hover {
 	font-size:15px;
 	font-weight:bold;
 	padding:7px 35px;
+  margin-top: 20px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
 }
@@ -289,7 +290,7 @@ header a:hover {
 }
 
 
-.feedback-container {
+.feedback-container .child-feedback-container {
   display: flex;
   justify-content: center;
   height: 230px;
@@ -300,8 +301,8 @@ header a:hover {
 .box-comment {
   font-family: var(--fonte-especial);
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.290);
-  height: 200px;
-  width: 330px;
+  height: 230px;
+  width: 350px;
   border-radius: 20px;
   background: #fff;
 
@@ -631,4 +632,163 @@ footer {
   background-color: #0c1e2b;
   font-size: 0.8rem;
   text-align: center;
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 90%;
+  }
+
+  
+}
+
+@media (max-width: 840px) {
+  
+  #apresentacao {
+    height: auto;
+  }
+
+  .container-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-bottom: 30px;
+
+  }
+  
+  .feedback-container {
+    display: flex;
+    justify-content: center;
+    height: 230px;
+    gap: 40px;
+    padding: 40px;
+  }
+  
+  .box-comment {
+    font-family: var(--fonte-especial);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.290);
+    height: 290px;
+    width: 330px;
+    border-radius: 20px;
+    background: #fff;
+  
+  }
+
+  .box-comment span {
+    display: none;
+  }
+  
+  .box-comment .circle {
+    display: none;
+  }
+
+/* DEV */
+
+.colaboradores {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  gap: 0px 30px
+;}
+ 
+}
+
+@media (max-width: 500px) {
+  .nav-list {
+    flex-wrap: wrap;
+  }
+
+  #caracteristicas {
+   height: auto;
+  }
+
+  .container-3 {
+    display: grid;
+    justify-items:  center;
+    justify-content: center;
+  }
+
+  .container-3 img {
+    width: 300px;
+    padding: 10px;
+  }
+
+  .container-3 .text {
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  #precos {
+    height: auto;
+  }
+
+  .container-4 {
+    height: 470px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* esconder a barra de scroll no ie, edge e firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* esconder a barra de scroll no chrome, opera e safari */
+  .container-4::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container-4 .child-container {
+    width: 400%;
+    height: inherit;
+
+  }
+
+  .plano1,
+  .plano2,
+  .plano3 {
+    margin: 0px 5px;
+    height: 350px;
+  }
+
+  #feedback {
+    height: auto;
+    padding: 70px 50px 30px 50px;
+  }
+
+  .feedback-container {
+    height: 350px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* esconder a barra de scroll no ie, edge e firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+  }
+
+  .feedback-container .child-feedback-container{
+    width: 400%;
+    height: inherit;
+  }
+
+  .feedback-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .box-comment {
+    margin: 0 5px;
+    height: 270px;
+    width: 250px;
+  }
+  
+
 }
