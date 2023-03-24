@@ -696,11 +696,17 @@ footer {
 
   .nav-bar {
     padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
 
   }
 
   .nav-item {
     display: none;
+  }
+
+  .nav-item a {
+    font-size: 1.2rem;
   }
 
   .mobile-menu-icon {
@@ -717,6 +723,7 @@ footer {
     width: 50px;
     float: right;
     filter: invert(1);
+
   }
 
   .mobile-menu ul {
@@ -747,8 +754,6 @@ footer {
     grid-template-columns: auto auto;
     gap: 15px;
     margin-bottom: 30px;
-
-
   }
 
   .interiores a,
@@ -928,7 +933,17 @@ footer {
 
   #desenvolvedores {
     height: auto;
-    padding: 5px 50px 20px 50px;
+    padding: 40px 50px 20px 50px;
+  }
+
+  .dev-container .text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dev-container .text span {
+    width: auto;
+    padding: 5px 0px;
   }
 
   .colaboradores {

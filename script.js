@@ -11,6 +11,7 @@ function menuShow() {
         menuMobile.classList.add('open');
         document.querySelector('.icon').src="imagens/icons/close-sm-svgrepo-com.svg";
         
-        document.querySelector('.header').style.background="rgba(18, 41, 57, 0.900)"
+        document.querySelector('.header').style.background="rgba(18, 41, 57, 0.900)";
+        document.querySelector('.header').style.transition=".2s";
     }
 }
